@@ -17,3 +17,5 @@ within the Downloads folder, the new txt file will be in the Downloads folder.
 The script asks for two things:
 * the name of the file (it assumes the path to the file is to the Downloads foler)
 * the extra parts of the new name (this takes the form of blah_blah_blah_  make sure you put that last underscore there)
+
+So, for example, if you have a data collection tag called lexus_20180406.txt and you run the script, you answer "lexus_20180406.txt" for the first question and "com_data_collection_tag_" for the second. You will get a new file called lexus_com_data_collection_tag_20180406.txt with the double-curley brackets inserted (if there are p variables...if there are no p variables, then it just renames the file);
