@@ -20,6 +20,12 @@ rl.question('What is the path to the tag file? ', (textFile) => {
 				if (err) console.log(err);
 				console.log('saved file');
 			});
+			if (textFile != newFileName) {
+				fs.unlink(filePath, (err) => {
+					if (err) console.log(err);
+					console.log('deleted old file');
+				});
+			}
 		});
 		rl.close();
 	});
