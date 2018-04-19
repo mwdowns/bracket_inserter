@@ -1,0 +1,28 @@
+{
+  "name": "node-bracket-inserter",
+  "version": "1.0.0",
+  "description": "This is a little script to take care of one of the more tedious tasks I have to do here at work.",
+  "main": "bracket-inserter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run build:live",
+    "build:live": "nodemon --exec ./node_modules/.bin/ts-node -- ./index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mwdowns/bracket_inserter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mwdowns/bracket_inserter/issues"
+  },
+  "homepage": "https://github.com/mwdowns/bracket_inserter#readme",
+  "devDependencies": {
+    "@types/node": "^9.6.5",
+    "nodemon": "^1.17.3",
+    "ts-node": "^6.0.0",
+    "typescript": "^2.8.1"
+  }
+}
