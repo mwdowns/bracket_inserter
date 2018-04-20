@@ -7,10 +7,11 @@ var rl = readline.createInterface({
 
 rl.question('What is the path to the tag file? ', (textFile) => {
 	rl.question('What do you want to add to the tag name? ', (newTagName) => {
-		filePath = '/Users/matthew.downs/Downloads/' + textFile;
+		var path = '/Users/matthew.downs/Downloads/';
+		var filePath =  path + textFile;
 		var textFileArr = textFile.split(/([0-9]{8}.txt)$/);
 		textFileArr[2] = newTagName;
-		var newFileName = textFileArr[0] + textFileArr[2] + textFileArr[1];
+		var newFileName = path + textFileArr[0] + textFileArr[2] + textFileArr[1];
 		fs.readFile(filePath, (err, buffer) => {
 			if (err) console.log('Problem! Danger! Error! ', err.message);
 			var begining = /(Insert)/g;
