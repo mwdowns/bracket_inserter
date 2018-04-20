@@ -18,8 +18,6 @@ To run from anywhere else
 node /path/to/script/bracket-inserter.js
 ```
 
-within the Downloads folder, the new txt file will be in the Downloads folder.
-
 The script asks for two things:
 * the name of the file (it assumes the path to the file is to the Downloads foler)
 * the extra parts of the new name (this takes the form of blah_blah_blah_  make sure you put that last underscore there)
